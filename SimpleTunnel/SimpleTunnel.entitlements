@@ -14,7 +14,7 @@
 	</array>
 	<key>keychain-access-groups</key>
 	<array>
-		<string>com.apple.managed.vpn.shared</string>
+		<string>$(AppIdentifierPrefix)com.telekom.SimpleTunnel</string>
 	</array>
 </dict>
 </plist>

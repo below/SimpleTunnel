@@ -18,7 +18,7 @@ The FilterDataProvider target in the SimpleTunnel project produces a sample Filt
 
 All of the sample extensions are packaged into the SimpleTunnel app. The SimpleTunnel app contains code demonstrating how to configure and control the various types of Network Extension providers. The SimpleTunnel target in the SimpleTunnel project produces the SimpleTunnel app and all of the sample extensions.
 
-The SimpleTunnel project contains both the client and server sides of a custom network tunneling protocol. The Packet Tunnel Provider and App Proxy Provider extensions implement the client side. The tunnel_server target produces a OS X command-line binary that implements the server side. The server is configured using a plist. A sample plist is included in the tunnel_erver source. To run the server, use this command:
+The SimpleTunnel project contains both the client and server sides of a custom network tunneling protocol. The Packet Tunnel Provider and App Proxy Provider extensions implement the client side. The tunnel_server target produces a OS X command-line binary that implements the server side. The server is configured using a plist. A sample plist is included in the tunnel_server source. To run the server, use this command:
 
 sudo tunnel_server <port> <path-to-config-plist>
 

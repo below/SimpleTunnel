@@ -41,8 +41,6 @@
 		C46318B31AC35C3300849278 /* StringListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46318B21AC35C3300849278 /* StringListController.swift */; };
 		C46318B51AC35F0600849278 /* EnumPickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46318B41AC35F0600849278 /* EnumPickerController.swift */; };
 		C46451541AC3199300617E08 /* OnDemandRuleListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46451531AC3199300617E08 /* OnDemandRuleListController.swift */; };
-		C46909421B0E9AEA00F8FCE0 /* FilterDataProvider.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 720FCA951B057C7900B168EB /* FilterDataProvider.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		C46909431B0E9AEE00F8FCE0 /* FilterControlProvider.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 720FCAA71B057C9400B168EB /* FilterControlProvider.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		C4751DE01ACB509A00C116E5 /* ProxyServerAddEditController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4751DDF1ACB509A00C116E5 /* ProxyServerAddEditController.swift */; };
 		C490D9011AC1AA8700FB67E9 /* AddEditConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = C490D9001AC1AA8700FB67E9 /* AddEditConfiguration.swift */; };
 		C497D4211B42185000EDD37E /* FilterUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = C497D4201B42185000EDD37E /* FilterUtilities.swift */; };
@@ -56,26 +54,12 @@
 		C4E003AE1B1A9E45001A01C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B07CCB401A8940E600A4F1E5 /* Main.storyboard */; };
 		C4E003AF1B1A9E45001A01C0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B07CCB431A8940E600A4F1E5 /* Images.xcassets */; };
 		C4E003B01B1A9E45001A01C0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B07CCB451A8940E600A4F1E5 /* LaunchScreen.xib */; };
-		C4F7B44B1B3B5DD40033A7E4 /* AppProxyProvider.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 442B69421B06724900382B6D /* AppProxyProvider.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		C4F7B44E1B3B5F400033A7E4 /* PacketTunnel.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B07CCB6D1A89414500A4F1E5 /* PacketTunnel.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		CBBF0EA01F5D639100066F35 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBBF0E9F1F5D639100066F35 /* NetworkExtension.framework */; };
+		CBDD16C61F61569F0072E776 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBBF0E9F1F5D639100066F35 /* NetworkExtension.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		C469093E1B0E9ADF00F8FCE0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B07CCB2F1A8940E600A4F1E5 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 720FCA941B057C7900B168EB;
-			remoteInfo = FilterDataProvider;
-		};
-		C46909401B0E9AE200F8FCE0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B07CCB2F1A8940E600A4F1E5 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 720FCAA61B057C9400B168EB;
-			remoteInfo = FilterControlProvider;
-		};
 		C48A18BF1B103A5800453F3E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B07CCB2F1A8940E600A4F1E5 /* Project object */;
@@ -111,13 +95,6 @@
 			remoteGlobalIDString = B01A16931A8A615F00BC9EFD;
 			remoteInfo = SimpleTunnelServices;
 		};
-		C4F7B4491B3B5DC60033A7E4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B07CCB2F1A8940E600A4F1E5 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 442B69371B06724900382B6D;
-			remoteInfo = AppProxy;
-		};
 		C4F7B44C1B3B5F3A0033A7E4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B07CCB2F1A8940E600A4F1E5 /* Project object */;
@@ -146,9 +123,6 @@
 			dstSubfolderSpec = 13;
 			files = (
 				C4F7B44E1B3B5F400033A7E4 /* PacketTunnel.appex in Embed App Extensions */,
-				C4F7B44B1B3B5DD40033A7E4 /* AppProxyProvider.appex in Embed App Extensions */,
-				C46909431B0E9AEE00F8FCE0 /* FilterControlProvider.appex in Embed App Extensions */,
-				C46909421B0E9AEA00F8FCE0 /* FilterDataProvider.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +246,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBDD16C61F61569F0072E776 /* NetworkExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -560,10 +535,7 @@
 			);
 			dependencies = (
 				C4F7B44D1B3B5F3A0033A7E4 /* PBXTargetDependency */,
-				C4F7B44A1B3B5DC60033A7E4 /* PBXTargetDependency */,
 				C4CEAAFD1B1A4728009C8CC0 /* PBXTargetDependency */,
-				C46909411B0E9AE200F8FCE0 /* PBXTargetDependency */,
-				C469093F1B0E9ADF00F8FCE0 /* PBXTargetDependency */,
 			);
 			name = SimpleTunnel;
 			productName = SimpleTunnel;
@@ -640,6 +612,9 @@
 						DevelopmentTeam = VZVFUQTSQC;
 						LastSwiftMigration = 0800;
 						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
 							com.apple.VPNLite = {
 								enabled = 1;
 							};
@@ -649,6 +624,11 @@
 						CreatedOnToolsVersion = 7.0;
 						DevelopmentTeam = VZVFUQTSQC;
 						LastSwiftMigration = 0800;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 					B0993D3A1A8A6DBC00510E18 = {
 						CreatedOnToolsVersion = 7.0;
@@ -827,16 +807,6 @@
 			target = B01A16931A8A615F00BC9EFD /* SimpleTunnelServices */;
 			targetProxy = C48A18BF1B103A5800453F3E /* PBXContainerItemProxy */;
 		};
-		C469093F1B0E9ADF00F8FCE0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 720FCA941B057C7900B168EB /* FilterDataProvider */;
-			targetProxy = C469093E1B0E9ADF00F8FCE0 /* PBXContainerItemProxy */;
-		};
-		C46909411B0E9AE200F8FCE0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 720FCAA61B057C9400B168EB /* FilterControlProvider */;
-			targetProxy = C46909401B0E9AE200F8FCE0 /* PBXContainerItemProxy */;
-		};
 		C4CEAAF91B1A45A6009C8CC0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = B01A16931A8A615F00BC9EFD /* SimpleTunnelServices */;
@@ -856,11 +826,6 @@
 			isa = PBXTargetDependency;
 			target = B01A16931A8A615F00BC9EFD /* SimpleTunnelServices */;
 			targetProxy = C4F0A55D1A8C026700BAB650 /* PBXContainerItemProxy */;
-		};
-		C4F7B44A1B3B5DC60033A7E4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 442B69371B06724900382B6D /* AppProxy */;
-			targetProxy = C4F7B4491B3B5DC60033A7E4 /* PBXContainerItemProxy */;
 		};
 		C4F7B44D1B3B5F3A0033A7E4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -897,7 +862,7 @@
 				DEVELOPMENT_TEAM = VZVFUQTSQC;
 				INFOPLIST_FILE = AppProxy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.telekom.SimpleTunnel.AppProxy";
+				PRODUCT_BUNDLE_IDENTIFIER = com.telekom.SimpleTunnel.AppProxy;
 				PRODUCT_MODULE_NAME = AppProxy;
 				PRODUCT_NAME = AppProxyProvider;
 				SKIP_INSTALL = YES;
@@ -913,7 +878,7 @@
 				DEVELOPMENT_TEAM = VZVFUQTSQC;
 				INFOPLIST_FILE = AppProxy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.telekom.SimpleTunnel.AppProxy";
+				PRODUCT_BUNDLE_IDENTIFIER = com.telekom.SimpleTunnel.AppProxy;
 				PRODUCT_MODULE_NAME = AppProxy;
 				PRODUCT_NAME = AppProxyProvider;
 				SKIP_INSTALL = YES;
@@ -1127,6 +1092,7 @@
 		B07CCB571A8940E600A4F1E5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = SimpleTunnel/SimpleTunnel.entitlements;
@@ -1152,6 +1118,7 @@
 		B07CCB581A8940E600A4F1E5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = SimpleTunnel/SimpleTunnel.entitlements;
@@ -1208,6 +1175,7 @@
 				SDKROOT = macosx;
 				SWIFT_OBJC_BRIDGING_HEADER = "tunnel_server/tunnel_server-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				VALID_ARCHS = x86_64;
 			};
 			name = Debug;
@@ -1221,6 +1189,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_OBJC_BRIDGING_HEADER = "tunnel_server/tunnel_server-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				VALID_ARCHS = x86_64;
 			};
 			name = Release;
