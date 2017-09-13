@@ -157,7 +157,7 @@ class SocketAddress {
 
 	/// Get the difference between this address and another address.
 	func difference(_ otherAddress: SocketAddress) -> Int64 {
-		return Int64(sin.sin_addr.s_addr.byteSwapped - otherAddress.sin.sin_addr.s_addr.byteSwapped)
+		return Int64(sin.sin_addr.s_addr.byteSwapped) - Int64(otherAddress.sin.sin_addr.s_addr.byteSwapped)
 	}
 }
 
